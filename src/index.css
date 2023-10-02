@@ -22,7 +22,6 @@ select {
 }
 
 img {
-    display: block;
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -53,7 +52,7 @@ img {
 }
 
 .main--cart {
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
 }
 
 .header {
@@ -88,8 +87,9 @@ img {
 }
 
 .product {
-    width: 90%;
-    margin-bottom: 1em;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .product__img {
@@ -131,11 +131,14 @@ img {
     display: flex;
     flex-flow: column;
     gap: 1em;
+    padding: 1rem;
 }
 
 @media screen and (min-width: 601px) {
     .product {
         width: 30%;
+        border: 1px solid #ccc;
+        padding: 10px;
     }
 
     .cart__item {
